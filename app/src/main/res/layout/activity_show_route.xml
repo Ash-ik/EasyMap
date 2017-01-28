@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapContainer"
+        android:background="@android:color/holo_blue_dark">
+
+        <LinearLayout
+            android:id="@+id/fromLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:background="@android:color/holo_blue_dark"
+            android:visibility="gone">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:editable="false"
+                android:id="@+id/fromLocation"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:background="@android:color/holo_blue_dark">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="6"
+                android:editable="false"
+                android:id="@+id/toLocation"
+                android:textColorHint="@android:color/white"
+                android:textColor="@android:color/white" />
+            <ImageButton
+                android:id="@+id/openMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_plus_white"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/ShowRouteMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment">
+        </fragment>
+
+        <ImageButton
+            android:id="@+id/menuButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_settings"
+            android:layout_gravity="bottom|end"
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="80dp"
+            android:layout_marginRight="30dp"
+            android:visibility="visible"/>
+        <ImageButton
+            android:id="@+id/addWaypoints"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/ic_plus_white"
+            android:background="@android:color/transparent"/>
+        <ImageButton
+            android:id="@+id/animateRoute"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="30dp"
+            android:src="@android:drawable/ic_media_play"
+            android:background="@android:color/transparent"/>
+
+    </FrameLayout>
+</LinearLayout>

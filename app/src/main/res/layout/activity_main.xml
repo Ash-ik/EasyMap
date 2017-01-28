@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.LeftDrawerLayout
+android:id="@+id/id_drawerlayout"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:clipChildren="false">
+<!--content-->
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:id="@+id/map_layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+                <fragment
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/googleMap"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/nearby_button"
+                    android:src="@android:drawable/ic_menu_myplaces"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.0"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="62dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/searchPlace_button"
+                    android:src="@android:drawable/ic_menu_search"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.0"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="62dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floating_button"
+                    android:src="@drawable/ic_menu"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="62dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cardList"
+                    android:layout_height="120dp"
+                    android:layout_width="wrap_content"
+                    android:alpha="0.0"
+                    android:layout_alignParentBottom="true"
+                    android:background="#90CAF9"/>
+
+        </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+<!--menu-->
+<RelativeLayout
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="start"
+    android:clipChildren="false"
+    android:background="@color/style_color_primary"
+    >
+
+        <com.mxn.soul.flowingdrawer_core.FlowingView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/style_color_primary"/>
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:paddingRight="10dp"
+            android:background="@color/style_color_primary"
+            />
+
+</RelativeLayout>
+
+</com.mxn.soul.flowingdrawer_core.LeftDrawerLayout>

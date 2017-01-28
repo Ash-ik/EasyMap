@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+<color name="defaultIntroColor">#2D9FC9</color>
+
+<color name="primary_dark">#6C7F91</color>
+    <color name="accent">#6C7F91</color>
+    <color name="light_green">#7ABA34</color>
+    <color name="dark_green">#5B852D</color>
+    <color name="photo_tint">#7f101010</color>
+
+
+    <color name="deepPurple1">#311B92</color>
+    <color name="deepPurple2">#512DA8</color>
+    <color name="deepPurple3">#673AB7</color>
+    <color name="deepPurple4">#9575CD</color>
+    <color name="deepPurple5">#D1C4E9</color>
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+        <color name="style_color_primary">#3F51B5</color>
+        <color name="style_color_primary_dark">#303F9F</color>
+        <color name="style_color_accent">#283593</color>
+        <color name="fab_color_pressed">#007787</color>
+        <color name="fab_color_shadow">#44000000</color>
+        <color name="text_like_counter">#2b5a83</color>
+        <color name="paint_color">#dddddd</color>
+        <color name="theme_default_primary_light">#ffff598e</color>
+        <color name="theme_default_primary">#e91e63</color>
+        <color name="theme_default_primary_dark">#c2185b</color>
+        <color name="theme_default_accent">#8f673ab7</color>
+        <color name="theme_default_accent_light">#8f9575cd</color>
+        <color name="theme_default_accent_dark">#8f512da8</color>
+        <color name="theme_background">#f2f2f2</color>
+
+        <color name="default_dark_muted">#44424f</color>
+        <color name="default_dark_vibrant">#7b400a</color>
+        <color name="default_vibrant">#f3aa66</color>
+        <color name="default_light_muted">#c9be9c</color>
+        <color name="default_light_vibrant">#fcda99</color>
+        <color name="default_muted">#7f7c8a</color>
+
+</resources>

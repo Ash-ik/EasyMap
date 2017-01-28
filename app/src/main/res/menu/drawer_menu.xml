@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="Home" />
+        <item
+            android:id="@+id/menu_galary"
+            android:icon="@android:drawable/ic_menu_gallery"
+            android:title="Galary" />
+        <item
+            android:id="@+id/menu_atlas"
+            android:icon="@drawable/map"
+            android:title="Atlas" />
+        <item
+            android:id="@+id/menu_taskToDo"
+            android:icon="@drawable/ic_action_list"
+            android:title="Task to do" />
+        <item
+            android:id="@+id/menu_addToFavourites"
+            android:icon="@drawable/fav_icon"
+            android:title="Add to Favourites" />
+        <item
+            android:id="@+id/menu_personalize"
+            android:icon="@drawable/ic_settings"
+            android:title="Personalize" />
+    </group>
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_help"
+            android:title="Help" />
+        <item
+            android:id="@+id/menu_aboutUs"
+            android:title="About Us" />
+    </group>
+</menu>
